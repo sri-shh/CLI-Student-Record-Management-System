@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Rahul Sharma",
+        "age": 20,
+        "grade": 8.5,
+        "course": "Computer Science"
+    },
+    {
+        "id": 2,
+        "name": "Priya Singh",
+        "age": 19,
+        "grade": 9.1,
+        "course": "Mathematics"
+    },
+    {
+        "id": 3,
+        "name": "Aman Gupta",
+        "age": 21,
+        "grade": 7.3,
+        "course": "Physics"
+    }
+]
