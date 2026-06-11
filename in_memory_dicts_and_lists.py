@@ -28,6 +28,11 @@ def view_students():
     for s in students:
         print(f"ID: {s['id']} , Name: {s['name']} , Age: {s['age']} , Course: {s['course']}")  
 
+students.append({"id": 1, "name": "Riya Sharma","age": 18, "course": "Data Science"})
+students.append({"id": 2, "name": "Aryan Goyal", "age": 20, "course": "Computer Science"})
+students.append({"id": 3, "name": "Myra Singh",  "age": 19, "course": "Electronics"})
+new_id = 4
+
 
 print("Welcome to Student Record System - Stage 1 (In-Memory Dicts and Lists)")
 
@@ -38,6 +43,7 @@ def delete_student():
         if s["id"] == sid:
             students.remove(s)
             print("Student deleted!")
+    print("Student not found.")        
 
 def search_student():
     print("Search Student")
@@ -49,7 +55,18 @@ def search_student():
 
 def modify_student():
     print("Modify Student")
-    sid = int(input("Enter student ID to modify:")
+    sid = int(input("Enter student ID to modify:"))
+    for s in students: 
+        if s["id"] == sid:
+            name = input("Enter new name: ")
+            age = int(input("Enter new age: "))
+            course = input("Enter new course: ")
+            s["name"] = name
+            s["age"] = age
+            s["course"] = course
+            print("Student modified successfully!")
+            return
+        print("Student not found.")
                               
 while True:
     print("\n1. View Students"
